@@ -1,0 +1,16 @@
+Index: Makefile
+===================================================================
+--- Makefile	(revision 17034)
++++ Makefile	(working copy)
+@@ -371,9 +371,10 @@
+ 	              -S.$(subst .,,$(suffix $@)) $(GYPFLAGS)
+ 
+ $(OUTDIR)/Makefile.native: $(GYPFILES) $(ENVFILE)
++	gmake dependencies
+ 	PYTHONPATH="$(shell pwd)/tools/generate_shim_headers:$(PYTHONPATH)" \
+ 	GYP_GENERATORS=make \
+-	build/gyp/gyp --generator-output="$(OUTDIR)" build/all.gyp \
++	build/gyp_v8 --generator-output="$(OUTDIR)" build/all.gyp \
+ 	              -Ibuild/standalone.gypi --depth=. -S.native $(GYPFLAGS)
+ 
+ must-set-ANDROID_NDK_ROOT_OR_TOOLCHAIN:
