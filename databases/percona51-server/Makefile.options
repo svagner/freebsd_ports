@@ -1,0 +1,12 @@
+OPTIONS=           STATICLIB "Enable static libraries" ON \
+	            SHAREDLIB "Enable shared libraries" ON \
+	            LOAD_INFILE "Enable LOAD DATA LOCAL INFILE" OFF \
+	            CP1251_CHARSET "Default character set cp1251" OFF \
+	            INNOBASE_PLUGIN "Enable plugin innobase" OFF \
+	            INNODB_PLUGIN "Enable plugin innodb" ON \
+	            PARTITION_PLUGIN "Enable MySQL Partitioning Support" OFF \
+	            ARCHIVE_PLUGIN "Enable Archive Storage Engine" ON \
+	            BLACKHOLE "Enable Basic Write-only Read-never tables" ON \
+	            NDBCLUSTER "Enable High Availability Clustered tables" OFF \
+		    DOCS "Install documentation for Percona Server" ON \
+		    MANPAGES "Install manual pages" ON \
