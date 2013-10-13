@@ -41,5 +41,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/include/v8-profiler.h ${STAGEDIR}/${PREFIX}/include
 	${INSTALL_DATA} ${WRKSRC}/include/v8-testing.h ${STAGEDIR}/${PREFIX}/include
 	${INSTALL_DATA} ${WRKSRC}/include/v8stdint.h ${STAGEDIR}/${PREFIX}/include
+	${INSTALL_DATA} ${WRKSRC}/include/v8config.h ${STAGEDIR}/${PREFIX}/include
 
 .include <bsd.port.post.mk>
