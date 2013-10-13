@@ -1,0 +1,3 @@
+PHP extension-wrapper for libpssh, asynchronously handles multiple SSH connections.
+
+WWW: https://github.com/badoo/pssh_extension
